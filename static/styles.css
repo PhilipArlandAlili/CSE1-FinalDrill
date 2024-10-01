@@ -1,0 +1,183 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0e1037fc;
+    color: #ededed;
+    height: 100vh;
+    width: 100%;
+    background-image: url("img/box.gif");
+    background-blend-mode: luminosity;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+#navbar {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+a {
+    color: #ededed;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+#navbar a:hover {
+    color: #3c86e1;
+    transition: 1s;
+}
+
+#home {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+#home table {
+    border: 1px solid white;
+    text-align: left;
+    width: 80%;
+    padding: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f923;
+}
+
+.container {
+    width: 55%;
+}
+
+.container h1 {
+    font-size: 46px;
+    font-weight: 800;
+}
+
+.container h3 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #3c86e1;
+}
+
+.container p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#side {
+    height: 100%;
+    width: 45%;
+    margin-left: 13%;
+    padding-bottom: 5%;
+    display: inline-block;
+}
+
+.sidebar {
+    padding: 25px;
+    height: 62%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.sidebar img {
+    height: 280px;
+    width: 70%;
+    border-radius: 20px;
+}
+
+.sidebar h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.about {
+    margin-top: 30px;
+    width: 70%;
+    border-bottom: 1px solid white;
+    border-radius: 30px 0;
+    }
+
+.container p {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.btn-edit {
+    background-color: rgb(26, 171, 72);
+    padding: 2px 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.btn-del {
+    background-color: rgb(255, 77, 77);
+    padding: 2px 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.add_student {
+    padding: 35px;
+}
+
+.btn-add {
+    background-color: rgb(82, 137, 255);
+    padding: 2px 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.search-bar {
+    width: 80%;
+    margin: 12px;
+    display: flex;
+    justify-content: end;
+}
+
+.search-bar input {
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+}
+
+.search-bar button {
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(82, 137, 255);
+    color: white;
+}
