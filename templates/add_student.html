@@ -13,7 +13,7 @@
             justify-content: center;
             width: 100%;
         }
-    
+
         .add-container {
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -21,38 +21,38 @@
             border: 1px solid #ccc;
             width: 40%;
         }
-    
+
         form {
             padding: 20px;
         }
-    
+
         form div {
             margin-bottom: 10px;
         }
-    
+
         label {
             font-size: 18px;
         }
-    
-        input {
+
+        input, select {
             width: 100%;
             padding: 6px;
             margin-top: 4px;
             border-radius: 10px;
         }
-    
+
         .btn {
             margin-top: 40px;
             display: flex;
             align-items: center;
             justify-content: end;
         }
-    
+
         .btn button {
             height: 30px;
             padding: 0 8px;
         }
-    
+
         .add {
             background-color: rgb(62, 206, 107);
             color: white;
@@ -62,7 +62,7 @@
             cursor: pointer;
         }
     </style>
-    
+
 </head>
 
 <body>
@@ -90,7 +90,13 @@
                 </div>
                 <div>
                     <label for="year">Year:</label>
-                    <input type="text" id="year" name="year" placeholder="Enter student's year" required>
+                    <select id="year" name="year" required>
+                        <option value="" disabled selected>Select Year</option>
+                        <option value="1st year">1st Year</option>
+                        <option value="2nd year">2nd Year</option>
+                        <option value="3rd year">3rd Year</option>
+                        <option value="4th year">4th Year</option>
+                    </select>
                 </div>
                 <div class="btn">
                     <button type="submit" class="add">Add Student</button>
